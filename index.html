@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Computación</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- MENÚ SUPERIOR -->
+    <nav class="top-header">
+      <a href="#" class="logo">
+        <img
+          src="https://i.pinimg.com/736x/20/58/e6/2058e6948e30b0dba7a7cbbea2b641e0.jpg"
+          alt="Logo"
+        />
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+      <ul class="menu-horizontal">
+        <li>
+          <a href="#">Quienes Somos</a>
+          <ul class="menu-vertical">
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Propósito</a></li>
+            <li><a href="#">Visión y Misión</a></li>
+            <li><a href="#">Sedes</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN HISTORIA -->
+    <section class="historia">
+      <h2>Historia</h2>
+      <div class="historia-contenido">
+        <div class="historia-imagen">
+          <img src="Imagenes/ing.jpg" alt="Imagen historia" />
+        </div>
+        <div class="historia-texto texto-centrado"></div>
+        <div class="historia-texto">
+          <p>
+            La historia de la computación es una historia de avance tecnológico
+            y conceptual, con raíces que se remontan a dispositivos mecánicos y
+            aritméticos antiguos. A lo largo de siglos, la computación ha
+            evolucionado desde la máquina analítica de Babbage hasta las
+            modernas computadoras y redes globales, pasando por el desarrollo de
+            la electrónica y la programación
+          </p>
+          <p>
+            Desde los primeros dispositivos de cálculo hasta las avanzadas
+            computadoras cuánticas y la inteligencia artificial, la computación
+            ha cambiado la forma en que vivimos y trabajamos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PROPÓSITO -->
+    <section id="proposito" class="historia">
+      <h2>Propósito</h2>
+      <div class="historia-contenido">
+        <div class="historia-texto texto-centrado">
+        <div class="historia-texto">
+          <p>
+            Nuestro propósito es fomentar el conocimiento sobre la historia de
+            la computación, destacando los hitos tecnológicos más relevantes que
+            han marcado su evolución, desde los primeros mecanismos de cálculo
+            hasta las modernas tecnologías digitales. Consideramos que
+            comprender el pasado de la computación no solo es valioso desde una
+            perspectiva educativa, sino que también permite contextualizar los
+            desafíos y oportunidades que enfrentamos hoy en el mundo digital. A
+            través de esta plataforma, buscamos acercar esta historia a personas
+            de todas las edades, especialmente a jóvenes estudiantes, docentes y
+            entusiastas de la tecnología, para que puedan explorar cómo se han
+            desarrollado conceptos fundamentales como los algoritmos, los
+            lenguajes de programación, la inteligencia artificial
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video-seccion">
+      <h2>Video destacado</h2>
+      <div class="video-contenedor">
+        <iframe
+          src="https://www.youtube.com/embed/wD8yJnIG7gI"
+          title="Video de Computación"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto">
+      <h2>Contáctanos</h2>
+
+      <div class="contacto-contenido">
+        <form class="formulario-contacto" id="formularioContacto" name="frm">
+          <div class="form-grupo">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipoDoc">Tipo de Documento:</label>
+            <select id="tipoDoc" name="tipoDoc">
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="carnet">Carnet de Extranjería</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="peru">Perú</option>
+              <option value="chile">Chile</option>
+              <option value="colombia">Colombia</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="asunto">Asunto:</label>
+            <textarea id="asunto" name="asunto" rows="3"></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label>Preferencias de contacto:</label>
+            <div class="checkboxes">
+              <label
+                ><input type="checkbox" name="preferencia" value="correo" />
+                Correo</label
+              >
+              <label
+                ><input type="checkbox" name="preferencia" value="telefono" />
+                Teléfono</label
+              >
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label>¿Eres estudiante?</label>
+            <div class="radios">
+              <label
+                ><input type="radio" name="estudiante" value="si" /> Sí</label
+              >
+              <label
+                ><input type="radio" name="estudiante" value="no" /> No</label
+              >
+            </div>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div id="mensajeEnviado" class="mensaje-enviado" style="display: none">
+          Mensaje enviado correctamente.
+        </div>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="https://i.pinimg.com/736x/20/58/e6/2058e6948e30b0dba7a7cbbea2b641e0.jpg"
+            class="footer-logo"
+            alt="Logo"
+          />
+          <p>COMPUTER</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="#">Política de Privacidad</a>
+          <a href="#">Términos y Condiciones</a>
+          <a href="Documentos/Proteccion-Datos.pdf">Protección de Datos</a>
+        </div>
+
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/128/733/733547.png"
+              class="social-icon"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/128/3256/3256013.png"
+              class="social-icon"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/128/3938/3938026.png"
+              class="social-icon"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
+              class="social-icon"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
