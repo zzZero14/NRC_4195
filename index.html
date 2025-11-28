@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <div id="main-content-wrapper">
     <!-- MENÚ SUPERIOR -->
     <nav class="top-header">
       <a href="#" class="logo">
@@ -29,8 +30,7 @@
           <ul class="menu-vertical">
             <li><a href="#">Historia</a></li>
             <li><a href="#">Propósito</a></li>
-            <li><a href="#">Visión y Misión</a></li>
-            <li><a href="#">Sedes</a></li>
+            
           </ul>
         </li>
         <li><a href="#">Clientes</a></li>
@@ -238,6 +238,35 @@
       </div>
     </footer>
 
+    </div>
+
+    <div class="login-container" id="login-modal">
+      <div class="login-box">
+        <a href="#" class="close-login-btn" id="close-login-btn" aria-label="Cerrar">&times;</a>
+        
+        <h2>Iniciar Sesión</h2>
+        <form onsubmit="return validarLogin(event)">
+          <div class="input-group">
+            <label for="username">Usuario:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              value="admin"
+              readonly
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Clave Secreta (pista: ok)</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="login-button">Acceder</button>
+        </form>
+      </div>
+    </div>
+
     <script src="main.js"></script>
+    
   </body>
 </html>

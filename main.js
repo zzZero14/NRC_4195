@@ -99,3 +99,27 @@ function validatePhone(fphone) {
   const re = /^[0-9]{9}$/;
   return re.test(fphone);
 }
+
+// login
+function validarLogin(event) {
+  event.preventDefault();
+  const CLAVE_SECRETA = "ok";
+  const passwordInput = document.getElementById("password").value;
+
+  const loginModal = document.getElementById("login-modal");
+  const mainContentWrapper = document.getElementById("main-content-wrapper");
+
+  if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
+    alert("¡Acceso concedido! Bienvenido.");
+
+    if (loginModal && mainContentWrapper) {
+      loginModal.classList.add("hidden");
+      mainContentWrapper.style.display = "block";
+    }
+  } else {
+    alert("Clave incorrecta. Inténtalo de nuevo.");
+    document.getElementById("password").value = "";
+  }
+
+  return false;
+}
